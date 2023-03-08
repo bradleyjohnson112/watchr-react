@@ -10,7 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   padding: 2rem 1.4rem;
+  overflow: auto;
 }
 
 .watchlist__search-bar {
@@ -20,7 +22,6 @@
 
 .watchlist__shows {
   width: 100%;
-  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem;

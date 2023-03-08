@@ -232,7 +232,7 @@ export default function Watchlist() {
   }
 
   function sectionOnClick(e) {
-    if (e.target.contains(modal.current) && e.target !== modal.current) {
+    if (e.target.closest(".search-bar") === null) {
       hideModal();
     }
   }
