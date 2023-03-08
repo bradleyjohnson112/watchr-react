@@ -1,0 +1,82 @@
+.show {
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px black;
+}
+
+.show__inner {
+  height: 100%;
+  padding: 1.4rem;
+}
+
+.show__inner::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.show__img {
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.show__name {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.show__status {
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+.show__status_running {
+  color: green;
+}
+
+.show__status_ended {
+  color: red;
+}
+
+.show__episode {
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+.show__episode-name {
+  font-weight: 500;
+}
+
+.show__airing-info {
+  font-weight: 600;
+}
+
+.show__airdate {
+  font-weight: 500;
+}
+
+.show__button {
+  float: right;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 100%;
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show__button:hover,
+.show__button:focus {
+  background-color: var(--black-lighter);
+}
+
+.show__trash-icon {
+  font-size: 1.4rem;
+}

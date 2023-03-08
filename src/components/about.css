@@ -1,0 +1,23 @@
+.about__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 2rem 1.4rem;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about li {
+  margin: 1rem 0;
+}
+
+.about a {
+  text-decoration: none;
+  color: blue;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}

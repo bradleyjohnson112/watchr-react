@@ -1,0 +1,32 @@
+.watchlist {
+  height: calc(100vh - 68px);
+  z-index: 0;
+}
+
+.watchlist__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.4rem;
+}
+
+.watchlist__search-bar {
+  width: 100%;
+  max-width: 650px;
+}
+
+.watchlist__shows {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  justify-content: center;
+}
+
+.watchlist__error-msg {
+  text-align: center;
+}
