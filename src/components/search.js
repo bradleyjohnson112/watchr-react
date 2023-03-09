@@ -2,7 +2,7 @@ import { forwardRef, useState } from "react";
 import "./search.css";
 import { TfiSearch, TfiClose } from "react-icons/tfi";
 
-const Search = forwardRef(({ addShow, isSearching, showModal, hideModal }, ref) => {
+const Search = ({ addShow, isSearching, showModal, hideModal }) => {
   const [query, setQuery] = useState("");
   const [shows, setShows] = useState([]);
 
@@ -43,7 +43,7 @@ const Search = forwardRef(({ addShow, isSearching, showModal, hideModal }, ref) 
   }
 
   const modal = 
-  <div className="search-bar__modal" ref={ref}>
+  <div className="search-bar__modal">
     <ul className="search-bar__list">
       {shows.map(show => (
         <li 
@@ -85,6 +85,6 @@ const Search = forwardRef(({ addShow, isSearching, showModal, hideModal }, ref) 
       { isSearching && modal }
     </article>
   )
-});
+};
 
 export default Search;

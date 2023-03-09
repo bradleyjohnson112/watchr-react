@@ -184,7 +184,6 @@ export default function Watchlist() {
   const [usersShows, setUsersShows] = useState(getUsersShows());
   const [shows, setShows] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
-  const modal = useRef(null);
 
   useEffect(() => {
     if (usersShows.length > 0) {
@@ -246,7 +245,6 @@ export default function Watchlist() {
               showModal={showModal}
               hideModal={hideModal}
               isSearching={isSearching}
-              ref={modal}
             />
         </div>
         <section className="watchlist__shows">

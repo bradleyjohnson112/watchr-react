@@ -2,8 +2,11 @@
   --black: #282828;
   --black-lighter: rgba(40, 40, 40, 0.1);
   --white: #ffffff;
-  --light-grey: #EDE6E6;
+  --grey: #cccccc;
+  --light-grey: #f8f8f8;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0;
@@ -12,7 +15,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: var(--white);
   color: var(--black);
   line-height: 1.5;
